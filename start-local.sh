@@ -24,16 +24,21 @@ kubectl apply -f k8s/service.yaml
 echo "⏳ Waiting for pod to be ready..."
 kubectl wait --for=condition=ready pod -l app=portfolio --timeout=60s || true
 
-# 6. Port forward (background)
+# 6. Port forward (background, persistent)
 echo "🔌 Port forwarding to localhost:8080..."
 pkill -f "kubectl port-forward svc/portfolio" || true
-kubectl port-forward svc/portfolio 8080:80 > /dev/null 2>&1 &
+nohup kubectl port-forward svc/portfolio 8080:80 > port-forward.log 2>&1 &
 
 echo ""
 echo "✅ App running locally at http://localhost:8080"
 echo ""
-echo "🌍 To expose on nishxnt.codes (Cloudflare Tunnel):"
-echo "   1. cloudflared tunnel login"
-echo "   2. cloudflared tunnel create portfolio"
-echo "   3. cloudflared tunnel route dns portfolio nishxnt.codes"
-echo "   4. cloudflared tunnel run --url http://localhost:8080 portfolio"
+
+echo "🌍 Starting Cloudflare Tunnel (background)..."
+pkill -f "cloudflared tunnel run" || true
+# Using config file created at ~/.cloudflared/config.yml
+nohup cloudflared tunnel run portfolio > cloudflared.log 2>&1 &
+
+echo "🎉 Setup complete! The tunnel is running in the background."
+echo "   Logs: port-forward.log, cloudflared.log"
+echo "   You can now close this terminal."
+echo "   To stop later, run: pkill -f cloudflared && pkill -f 'kubectl port-forward'"
