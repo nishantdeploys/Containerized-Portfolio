@@ -146,6 +146,7 @@ function initContactForm() {
             email: document.getElementById('email').value,
             institute: document.getElementById('institute').value,
             subject: document.getElementById('subject').value,
+            suggestions: document.getElementById('suggestions').value,
             rating: document.querySelector('input[name="rating"]:checked')?.value || ''
         };
 
@@ -162,6 +163,7 @@ function initContactForm() {
                 'entry.1826983457': formData.email,
                 'entry.1398257962': formData.institute,
                 'entry.2023186783': formData.subject,
+                'entry.2090854412': formData.suggestions,
                 'entry.1185156895': formData.rating
             },
             () => {
@@ -277,6 +279,12 @@ function validateForm(data) {
     // Subject validation
     if (data.subject.trim().length < 3) {
         showFieldError('subject', 'Please enter a subject');
+        isValid = false;
+    }
+
+    // Suggestions validation
+    if (data.suggestions.trim().length < 2) {
+        showFieldError('suggestions', 'Please enter your suggestions');
         isValid = false;
     }
 
