@@ -4,22 +4,22 @@
 
 :root {
     /* ===== VIBRANT COLOR PALETTE ===== */
-    /* Primary Colors - Sunset Gradient */
-    --color-coral: #FF6B6B;
-    --color-magenta: #C44569;
-    --color-purple: #6C5CE7;
-    --color-deep-purple: #5541D7;
+    /* Primary Colors - Cyan/Green Gradient */
+    --color-coral: #00E676; /* Lime Green */
+    --color-magenta: #00B0FF; /* Light Blue/Cyan */
+    --color-purple: #1DE9B6; /* Teal */
+    --color-deep-purple: #00E5FF; /* Cyan */
     
     /* Accent Colors */
-    --color-lime: #00D9A5;
-    --color-lime-light: #1AE5B4;
-    --color-cyan: #00C9FF;
+    --color-lime: #00E676;
+    --color-lime-light: #69F0AE;
+    --color-cyan: #00E5FF;
     
     /* Gradient Combinations */
-    --gradient-primary: linear-gradient(135deg, var(--color-coral) 0%, var(--color-magenta) 50%, var(--color-purple) 100%);
+    --gradient-primary: linear-gradient(135deg, var(--color-magenta) 0%, var(--color-purple) 50%, var(--color-coral) 100%);
     --gradient-secondary: linear-gradient(135deg, var(--color-lime) 0%, var(--color-cyan) 100%);
-    --gradient-hero: linear-gradient(135deg, #FF6B6B 0%, #C44569 35%, #6C5CE7 70%, #5541D7 100%);
-    --gradient-card: linear-gradient(135deg, rgba(255, 107, 107, 0.1) 0%, rgba(108, 92, 231, 0.1) 100%);
+    --gradient-hero: linear-gradient(135deg, var(--color-magenta) 0%, var(--color-purple) 35%, var(--color-cyan) 70%, var(--color-lime) 100%);
+    --gradient-card: linear-gradient(135deg, rgba(0, 176, 255, 0.1) 0%, rgba(0, 230, 118, 0.1) 100%);
     
     /* ===== LIGHT MODE COLORS ===== */
     --bg-primary-light: #FFFFFF;
@@ -33,15 +33,15 @@
     --shadow-hover-light: rgba(108, 92, 231, 0.3);
     
     /* ===== DARK MODE COLORS ===== */
-    --bg-primary-dark: #0F0E17;
-    --bg-secondary-dark: #16161F;
-    --bg-card-dark: rgba(22, 22, 31, 0.9);
+    --bg-primary-dark: #050814;
+    --bg-secondary-dark: rgba(11, 14, 28, 0.15);
+    --bg-card-dark: rgba(11, 14, 28, 0.9);
     --text-primary-dark: #FFFFFE;
     --text-secondary-dark: #A7A9BE;
     --text-muted-dark: #7A7A92;
-    --border-dark: rgba(255, 255, 255, 0.1);
-    --shadow-dark: rgba(0, 0, 0, 0.5);
-    --shadow-hover-dark: rgba(108, 92, 231, 0.5);
+    --border-dark: rgba(255, 255, 255, 0.05);
+    --shadow-dark: rgba(0, 0, 0, 0.6);
+    --shadow-hover-dark: rgba(108, 92, 231, 0.6);
     
     /* ===== DEFAULT THEME (LIGHT) ===== */
     --bg-primary: var(--bg-primary-light);
@@ -117,11 +117,11 @@
     --transition-slow: 500ms ease-in-out;
     
     /* ===== GLASSMORPHISM ===== */
-    --glass-bg-light: rgba(255, 255, 255, 0.7);
-    --glass-bg-dark: rgba(22, 22, 31, 0.7);
-    --glass-backdrop: blur(10px);
-    --glass-border-light: rgba(255, 255, 255, 0.3);
-    --glass-border-dark: rgba(255, 255, 255, 0.1);
+    --glass-bg-light: rgba(255, 255, 255, 0.9);
+    --glass-bg-dark: rgba(255, 255, 255, 0.9);
+    --glass-backdrop: blur(12px);
+    --glass-border-light: rgba(255, 255, 255, 0.2);
+    --glass-border-dark: rgba(255, 255, 255, 0.15);
     
     --glass-bg: var(--glass-bg-light);
     --glass-border: var(--glass-border-light);

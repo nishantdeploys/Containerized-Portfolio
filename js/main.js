@@ -12,8 +12,8 @@ import MeteorShower from './meteorShower.js';
 
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize theme manager
-    const themeManager = new ThemeManager();
+    // Theme manager disabled to force dark space theme
+    // const themeManager = new ThemeManager();
 
     // Initialize navigation manager
     const navigationManager = new NavigationManager();
@@ -59,7 +59,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize contact form
     initContactForm();
+
+    // Initialize Profile Photo Uploader
+    initProfileUploader();
 });
+
+/**
+ * Initialize Profile Photo Uploader
+ */
+function initProfileUploader() {
+    const fileInput = document.getElementById('profile-upload');
+    const profileImg = document.getElementById('profile-img');
+
+    if (fileInput && profileImg) {
+        fileInput.addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    profileImg.src = e.target.result;
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    }
+}
 
 /**
  * Load timeline data (experience or education)

@@ -28,47 +28,47 @@ class SkillBars {
     render() {
         if (!this.container) return;
 
-        this.container.innerHTML = this.skills.map(skill => `
-            <div class="skill-card">
-                <div class="skill-header">
-                    <span class="skill-name">${skill.name}</span>
-                    <span class="skill-level">${skill.level}%</span>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-progress" data-level="${skill.level}" style="--skill-width: ${skill.level}%"></div>
-                </div>
-            </div>
-        `).join('');
+        const deviconMap = {
+            'Java': 'java-original',
+            'C++': 'cplusplus-original',
+            'Python': 'python-original',
+            'React': 'react-original',
+            'Node.js': 'nodejs-original-wordmark',
+            'MongoDB': 'mongodb-original',
+            'AWS EC2': 'amazonwebservices-plain-wordmark',
+            'AWS S3': 'amazonwebservices-plain-wordmark',
+            'AWS Lambda': 'amazonwebservices-plain-wordmark',
+            'Apache CloudStack': 'apache-original',
+            'Linux (Ubuntu/Arch/Debian)': 'linux-original',
+            'Git & GitHub': 'git-original'
+        };
 
-        // Observe skill cards for animation
-        this.observeSkills();
+        this.container.innerHTML = this.skills.map((skill) => {
+            const iconName = deviconMap[skill.name] || 'devicon-original';
+            const folder = iconName.split('-')[0];
+            const iconUrl = `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${folder}/${iconName}.svg`;
+            
+            const randomX = Math.floor(Math.random() * 80) + 10; // 10% to 90%
+            const delay = Math.random() * 5; // 0 to 5s delay
+            const duration = Math.random() * 4 + 6; // 6 to 10s duration
+            const size = Math.random() * 20 + 60; // 60px to 80px
+
+            return `
+                <div class="skill-bubble" style="left: ${randomX}%; animation-delay: ${delay}s; animation-duration: ${duration}s; width: ${size}px; height: ${size}px;">
+                    <img src="${iconUrl}" alt="${skill.name}" title="${skill.name}" />
+                </div>
+            `;
+        }).join('');
+
+        // Removed intersection observer since bubbles use infinite CSS animation
     }
 
     /**
-     * Observe skill cards for scroll animation
+     * Skill bubbles are animated via infinite CSS animations 
+     * so no observer is needed for progress bars.
      */
     observeSkills() {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const progressBar = entry.target.querySelector('.skill-progress');
-                        if (progressBar) {
-                            const level = progressBar.getAttribute('data-level');
-                            setTimeout(() => {
-                                progressBar.style.width = level + '%';
-                            }, 100);
-                        }
-                        observer.unobserve(entry.target);
-                    }
-                });
-            },
-            { threshold: 0.5 }
-        );
-
-        this.container.querySelectorAll('.skill-card').forEach(card => {
-            observer.observe(card);
-        });
+        // Obsolete
     }
 
     /**

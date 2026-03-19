@@ -19,7 +19,7 @@ export default class MeteorShower {
         this.dirX = Math.cos(this.angle);
         this.dirY = Math.sin(this.angle);
 
-        this.spawnIntervalMs = 700;
+        this.spawnIntervalMs = 200;
         this.lastSpawnTime = 0;
 
         this.animationFrameId = null;

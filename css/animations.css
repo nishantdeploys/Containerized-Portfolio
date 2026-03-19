@@ -29,6 +29,26 @@
     animation: float 8s ease-in-out infinite;
 }
 
+/* ===== FLOATING BUBBLES ===== */
+@keyframes floatUpAndFade {
+    0% {
+        transform: translateY(0) scale(0.8);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+        transform: translateY(-50px) scale(1);
+    }
+    90% {
+        opacity: 1;
+        transform: translateY(calc(-500px + 50px)) scale(1);
+    }
+    100% {
+        transform: translateY(-500px) scale(0.8);
+        opacity: 0;
+    }
+}
+
 .shape-2 {
     animation: float 10s ease-in-out infinite 1s;
 }
@@ -151,16 +171,6 @@
 
 .skill-progress {
     animation: skill-fill 1.5s ease-out forwards;
-}
-
-/* ===== CARD TILT EFFECT ===== */
-.project-card {
-    perspective: 1000px;
-    transform-style: preserve-3d;
-}
-
-.project-card:hover {
-    transform: translateY(-8px) rotateX(2deg) rotateY(2deg);
 }
 
 /* ===== RIPPLE EFFECT ===== */
@@ -364,24 +374,6 @@
 .hover-lift:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-xl);
-}
-
-/* ===== GRADIENT BORDER ANIMATION ===== */
-@keyframes gradient-border {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-.project-card::before {
-    background-size: 200% 200%;
-    animation: gradient-border 3s ease infinite;
 }
 
 /* ===== THEME TRANSITION ===== */
