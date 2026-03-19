@@ -8,6 +8,7 @@ import AnimationManager from './animations.js';
 import SkillBars from './components/skillBars.js';
 import ProjectCards from './components/projectCards.js';
 import Typewriter from './components/typewriter.js';
+import MeteorShower from './meteorShower.js';
 
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', () => {
@@ -19,6 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize animation manager
     const animationManager = new AnimationManager();
+
+    // Initialize canvas meteor shower background
+    const meteorShower = new MeteorShower('meteor-canvas');
+    meteorShower.init();
 
     // Initialize typewriter effect
     const typewriter = new Typewriter('typewriter', [
