@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     meteorShower.init();
 
     // Initialize typewriter effect
-    const typewriter = new Typewriter('typewriter', [
+    const typewriter = new Typewriter('tw', [
         'Software & Cloud Engineer',
         'Problem Solver',
         'Full-Stack Developer',

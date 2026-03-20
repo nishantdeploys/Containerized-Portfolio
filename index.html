@@ -1,329 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nishant Kumar - Software & Cloud Engineer | Portfolio showcasing projects in AWS, React, and Full-Stack Development">
-    <meta name="keywords" content="Nishant Kumar, Software Engineer, Cloud Engineer, AWS, React, Full-Stack Developer">
-    <meta name="author" content="Nishant Kumar">
-    <title>Nishant Kumar | Software & Cloud Engineer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-    
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="css/variables.css?v=20260320_6">
-    <link rel="stylesheet" href="css/styles.css?v=20260320_6">
-    <link rel="stylesheet" href="css/animations.css?v=20260320_6">
-    <link rel="stylesheet" href="css/responsive.css?v=20260320_6">
 
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Nishant Kumar - Software & Cloud Engineer | Portfolio showcasing projects in AWS, React, and Full-Stack Development">
+  <meta name="keywords" content="Nishant Kumar, Software Engineer, Cloud Engineer, AWS, React, Full-Stack Developer">
+  <meta name="author" content="Nishant Kumar">
+  <title>Nishant Kumar | Software & Cloud Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Files -->
+    <link rel="stylesheet" href="css/variables.css?v=20260321_2">
+    <link rel="stylesheet" href="css/styles.css?v=20260321_2">
+    <link rel="stylesheet" href="css/animations.css?v=20260321_2">
+    <link rel="stylesheet" href="css/responsive.css?v=20260321_2">
+
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
 </head>
+
 <body data-theme="dark">
 
-    <!-- Meteor Background Canvas for all sections -->
-    <canvas id="meteor-canvas"></canvas>
+  <!-- Meteor Background Canvas for all sections -->
+  <canvas id="meteor-canvas"></canvas>
 
 
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container nav-container">
-            <a href="#home" class="logo">
-                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
-                            <stop offset="50%" style="stop-color:#C44569;stop-opacity:1" />
-                            <stop offset="100%" style="stop-color:#6C5CE7;stop-opacity:1" />
-                        </linearGradient>
-                    </defs>
-                    <!-- Hexagon Shape -->
-                    <path d="M25 2 L45 14 L45 36 L25 48 L5 36 L5 14 Z" stroke="url(#logoGradient)" stroke-width="2.5" fill="none"/>
-                    <!-- Letters NK -->
-                    <text x="25" y="33" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="url(#logoGradient)" text-anchor="middle">NK</text>
-                </svg>
-                <span class="logo-text">Nishant Kumar</span>
-            </a>
-            
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#achievements" class="nav-link">Achievements</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            
-            <div class="nav-actions">
-                <!-- Theme toggle removed to enforce space theme -->
-                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
+              <stop offset="50%" style="stop-color:#C44569;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#6C5CE7;stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <!-- Hexagon Shape -->
+          <path d="M25 2 L45 14 L45 36 L25 48 L5 36 L5 14 Z" stroke="url(#logoGradient)" stroke-width="2.5"
+            fill="none" />
+          <!-- Letters NK -->
+          <text x="25" y="33" font-family="Arial, sans-serif" font-size="20" font-weight="bold"
+            fill="url(#logoGradient)" text-anchor="middle">NK</text>
+        </svg>
+        <span class="logo-text">Nishant Kumar</span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Theme toggle removed to enforce space theme -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-content-new">
+      <div class="hero-text-new">
+        <div class="hero-eyebrow"><span class="pulse"></span> Available for opportunities</div>
+        <h1 class="hero-name-new">Hi, I'm <span class="grad">Nishant Kumar</span></h1>
+        <div class="tw-row"><span class="tw-slash">//</span> <span id="tw"></span><span class="tw-cur"></span></div>
+        <p class="hero-desc-new">Passionate about building scalable cloud solutions and crafting exceptional web
+          experiences. Specialized in AWS, React, and Full-Stack Development.</p>
+        <div class="hero-btns-new">
+          <a href="#projects" class="btn-new primary">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg>
+            View My Work
+          </a>
+          <a href="#contact" class="btn-new ghost">Get In Touch</a>
         </div>
-    </nav>
-
-    <!-- HERO -->
-    <section id="home" class="hero">
-      <canvas id="particle-canvas"></canvas>
-      <div class="hero-content-new">
-        <div class="hero-text-new">
-          <div class="hero-eyebrow"><span class="pulse"></span> Available for opportunities</div>
-          <h1 class="hero-name-new">Hi, I'm <span class="grad">Nishant Kumar</span></h1>
-          <div class="tw-row"><span class="tw-slash">//</span> <span id="tw"></span><span class="tw-cur"></span></div>
-          <p class="hero-desc-new">Passionate about building scalable cloud solutions and crafting exceptional web experiences. Specialized in AWS, React, and Full-Stack Development.</p>
-          <div class="hero-btns-new">
-            <a href="#projects" class="btn-new primary">
-              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-              View My Work
-            </a>
-            <a href="#contact" class="btn-new ghost">Get In Touch</a>
-          </div>
-          <div class="hero-socials-new">
-            <a class="sicon" href="https://github.com/nishantdeploys" target="_blank" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.79-.26.79-.58v-2.23c-3.34.73-4.03-1.42-4.03-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23.96-.27 1.98-.4 3-.4s2.04.13 3 .4c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.69.8.58C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg></a>
-            <a class="sicon" href="https://linkedin.com/in/nishant-kumar-61476b283" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0H5C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5zM8 19H5V8h3v11zM6.5 6.73A1.77 1.77 0 1 1 6.5 3.2a1.77 1.77 0 0 1 0 3.53zM20 19h-3v-5.6c0-3.37-4-3.11-4 0V19h-3V8h3v1.77C14.4 7.19 20 7 20 12.47V19z"/></svg></a>
-            <a class="sicon" href="mailto:nishant098097@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
-            <a class="sicon" href="data/Nishant_CV.pdf" download aria-label="Download CV"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></a>
-          </div>
-        </div>
-        <div class="hero-profile-image">
-          <canvas id="globe-canvas" width="380" height="380"></canvas>
+        <div class="hero-socials-new">
+          <a class="sicon" href="https://github.com/nishantdeploys" target="_blank" aria-label="GitHub"><svg
+              viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.79-.26.79-.58v-2.23c-3.34.73-4.03-1.42-4.03-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23.96-.27 1.98-.4 3-.4s2.04.13 3 .4c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.69.8.58C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z" />
+            </svg></a>
+          <a class="sicon" href="https://linkedin.com/in/nishant-kumar-61476b283" target="_blank"
+            aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 0H5C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5zM8 19H5V8h3v11zM6.5 6.73A1.77 1.77 0 1 1 6.5 3.2a1.77 1.77 0 0 1 0 3.53zM20 19h-3v-5.6c0-3.37-4-3.11-4 0V19h-3V8h3v1.77C14.4 7.19 20 7 20 12.47V19z" />
+            </svg></a>
+          <a class="sicon" href="mailto:nishant098097@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg></a>
+          <a class="sicon" href="data/Nishant_CV.pdf" download aria-label="Download CV"><svg viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg></a>
         </div>
       </div>
-      <div class="scroll-hint"><div class="scroll-track"></div>scroll</div>
-    </section>
+      <div class="hero-profile-image">
+        <canvas id="globe-canvas" width="380" height="380"></canvas>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-track"></div>scroll
+    </div>
+  </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <div class="blob blob-a"></div>
-      <div class="blob blob-b"></div>
-      <div class="container">
-        <div class="about-wrap">
-          <aside class="profile-card">
-            <div class="avatar-ring"><img src="data/profile.jpg" alt="Nishant Kumar" class="avatar-img"></div>
-            <div><div class="p-name">Nishant Kumar</div><div class="p-title">Software &amp; Cloud Engineer</div></div>
-            <div class="status-pill"><span class="status-pulse"></span> Open to Work</div>
-            <div class="chip-list">
-              <span class="chip">☁️ AWS</span><span class="chip">⚛️ React</span><span class="chip">🟢 Node.js</span>
-              <span class="chip">🐍 Python</span><span class="chip">💻 C++</span><span class="chip">🏆 OCI Certified</span>
-            </div>
-            <div class="p-socials">
-              <a class="sicon" href="https://github.com/nishantdeploys" target="_blank" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.79-.26.79-.58v-2.23c-3.34.73-4.03-1.42-4.03-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23.96-.27 1.98-.4 3-.4s2.04.13 3 .4c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.69.8.58C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg></a>
-              <a class="sicon" href="https://linkedin.com/in/nishant-kumar-61476b283" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0H5C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5zM8 19H5V8h3v11zM6.5 6.73A1.77 1.77 0 1 1 6.5 3.2a1.77 1.77 0 0 1 0 3.53zM20 19h-3v-5.6c0-3.37-4-3.11-4 0V19h-3V8h3v1.77C14.4 7.19 20 7 20 12.47V19z"/></svg></a>
-              <a class="sicon" href="mailto:nishant098097@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
-            </div>
-          </aside>
-          <div class="about-text-new">
-            <div><div class="section-label">About Me</div><h2 class="about-h">Building the <em>cloud&#8209;native</em> web,<br>one commit at a time.</h2></div>
-            <div class="about-paras">
-              <p>Hello! I'm <strong>Nishant Kumar</strong>, a passionate Software &amp; Cloud Engineer currently pursuing <strong>B.Tech in Computer Science &amp; Engineering</strong> at Lovely Professional University, Punjab.</p>
-              <p>I specialize in building robust cloud architectures using <strong>AWS services</strong> (EC2, S3, Lambda), developing full-stack web applications with <strong>React, Node.js, and MongoDB</strong>, and solving complex problems with <strong>C++, Java, and Python</strong>.</p>
-              <p>My journey in tech is driven by curiosity and a commitment to continuous learning. I've completed <strong>Oracle Cloud Infrastructure certifications</strong> and actively participate in coding challenges to sharpen my problem-solving skills.</p>
-              <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or learning about cloud architectures and distributed systems.</p>
-            </div>
-            <div class="divider"></div>
-            <div class="stats">
-              <div class="stat"><span class="stat-n">10+</span><span class="stat-l">Projects Built</span></div>
-              <div class="stat"><span class="stat-n">3+</span><span class="stat-l">Certifications</span></div>
-              <div class="stat"><span class="stat-n">500+</span><span class="stat-l">Problems Solved</span></div>
-            </div>
-            <div class="divider"></div>
-            <div class="contact-row">
-              <a href="mailto:nishant098097@gmail.com" class="cpill"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> nishant098097@gmail.com</a>
-              <a href="tel:+917480985252" class="cpill"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> +91 7480985252</a>
-            </div>
-            <div class="about-cta">
-              <a href="#projects" class="btn-new primary">View Projects</a>
-              <a href="data/Nishant_CV.pdf" download class="btn-new ghost">Download CV</a>
-            </div>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="blob blob-a"></div>
+    <div class="blob blob-b"></div>
+    <div class="container">
+      <div class="about-wrap">
+        <aside class="profile-card">
+          <div class="avatar-ring"><img src="data/profile.jpg" alt="Nishant Kumar" class="avatar-img"></div>
+          <div>
+            <div class="p-name">Nishant Kumar</div>
+            <div class="p-title">Software &amp; Cloud Engineer</div>
+          </div>
+          <div class="status-pill"><span class="status-pulse"></span> Open to Work</div>
+          <div class="chip-list">
+            <span class="chip">☁️ AWS</span><span class="chip">⚛️ React</span><span class="chip">🟢 Node.js</span>
+            <span class="chip">🐍 Python</span><span class="chip">💻 C++</span><span class="chip">🏆 OCI
+              Certified</span>
+          </div>
+          <div class="p-socials">
+            <a class="sicon" href="https://github.com/nishantdeploys" target="_blank" aria-label="GitHub"><svg
+                viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.79-.26.79-.58v-2.23c-3.34.73-4.03-1.42-4.03-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23.96-.27 1.98-.4 3-.4s2.04.13 3 .4c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.69.8.58C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z" />
+              </svg></a>
+            <a class="sicon" href="https://linkedin.com/in/nishant-kumar-61476b283" target="_blank"
+              aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M19 0H5C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5zM8 19H5V8h3v11zM6.5 6.73A1.77 1.77 0 1 1 6.5 3.2a1.77 1.77 0 0 1 0 3.53zM20 19h-3v-5.6c0-3.37-4-3.11-4 0V19h-3V8h3v1.77C14.4 7.19 20 7 20 12.47V19z" />
+              </svg></a>
+            <a class="sicon" href="mailto:nishant098097@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg></a>
+          </div>
+        </aside>
+        <div class="about-text-new">
+          <div>
+            <div class="section-label">About Me</div>
+            <h2 class="about-h">Building the <em>cloud&#8209;native</em> web,<br>one commit at a time.</h2>
+          </div>
+          <div class="about-paras">
+            <p>Hello! I'm <strong>Nishant Kumar</strong>, a passionate Software &amp; Cloud Engineer currently pursuing
+              <strong>B.Tech in Computer Science &amp; Engineering</strong> at Lovely Professional University, Punjab.
+            </p>
+            <p>I specialize in building robust cloud architectures using <strong>AWS services</strong> (EC2, S3,
+              Lambda), developing full-stack web applications with <strong>React, Node.js, and MongoDB</strong>, and
+              solving complex problems with <strong>C++, Java, and Python</strong>.</p>
+            <p>My journey in tech is driven by curiosity and a commitment to continuous learning. I've completed
+              <strong>Oracle Cloud Infrastructure certifications</strong> and actively participate in coding challenges
+              to sharpen my problem-solving skills.</p>
+            <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or
+              learning about cloud architectures and distributed systems.</p>
+          </div>
+          <div class="divider"></div>
+          <div class="stats">
+            <div class="stat"><span class="stat-n">10+</span><span class="stat-l">Projects Built</span></div>
+            <div class="stat"><span class="stat-n">3+</span><span class="stat-l">Certifications</span></div>
+            <div class="stat"><span class="stat-n">500+</span><span class="stat-l">Problems Solved</span></div>
+          </div>
+          <div class="divider"></div>
+          <div class="contact-row">
+            <a href="mailto:nishant098097@gmail.com" class="cpill"><svg viewBox="0 0 24 24" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg> nishant098097@gmail.com</a>
+            <a href="tel:+917480985252" class="cpill"><svg viewBox="0 0 24 24" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg> +91 7480985252</a>
+          </div>
+          <div class="about-cta">
+            <a href="#projects" class="btn-new primary">View Projects</a>
+            <a href="data/Nishant_CV.pdf" download class="btn-new ghost">Download CV</a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-        <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <div class="skills-grid" id="skillsGrid">
-                <!-- Skills will be dynamically loaded -->
+  <!-- Skills Section -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <h2 class="section-title">Skills & Technologies</h2>
+      <div class="skills-grid" id="skillsGrid">
+        <!-- Skills will be dynamically loaded -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="project-filters" id="projectFilters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="react">React</button>
+        <button class="filter-btn" data-filter="aws">AWS</button>
+        <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Projects will be dynamically loaded -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience section">
+    <div class="container">
+      <h2 class="section-title">Work Experience</h2>
+      <div class="timeline" id="experienceTimeline">
+        <!-- Experience will be dynamically loaded -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education section">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="timeline" id="educationTimeline">
+        <!-- Education will be dynamically loaded -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="achievements section">
+    <div class="container">
+      <h2 class="section-title">Achievements & Certifications</h2>
+      <div class="achievements-grid" id="achievementsGrid">
+        <!-- Achievements will be dynamically loaded -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-text">
+          <h3>Let's Build Something Amazing Together!</h3>
+          <p>
+            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+            Whether you have a question or just want to say hi, feel free to reach out!
+          </p>
+          <div class="contact-methods">
+            <div class="method">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:nishant098097@gmail.com">nishant098097@gmail.com</a>
+              </div>
             </div>
+            <div class="method">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:+917480985252">+91 7480985252</a>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+        <form class="contact-form" id="contactForm" action="mailto:nishant098097@gmail.com" method="POST"
+          enctype="text/plain">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required placeholder="John Doe">
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Share your thoughts..." rows="6"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary submit-btn">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-spinner" aria-hidden="true"></span>
+            <span class="ripple"></span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects section">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="project-filters" id="projectFilters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="react">React</button>
-                <button class="filter-btn" data-filter="aws">AWS</button>
-                <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
-            </div>
-            <div class="projects-grid" id="projectsGrid">
-                <!-- Projects will be dynamically loaded -->
-            </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 Nishant Kumar. Built with ❤️ using HTML, CSS, and JavaScript.</p>
+        <div class="footer-links">
+          <a href="https://github.com/nishantdeploys" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/nishant-kumar-61476b283" target="_blank"
+            rel="noopener noreferrer">LinkedIn</a>
+          <a href="mailto:nishant098097@gmail.com">Email</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience section">
-        <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="timeline" id="experienceTimeline">
-                <!-- Experience will be dynamically loaded -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education section">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="timeline" id="educationTimeline">
-                <!-- Education will be dynamically loaded -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Achievements Section -->
-    <section id="achievements" class="achievements section">
-        <div class="container">
-            <h2 class="section-title">Achievements & Certifications</h2>
-            <div class="achievements-grid" id="achievementsGrid">
-                <!-- Achievements will be dynamically loaded -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-text">
-                    <h3>Let's Build Something Amazing Together!</h3>
-                    <p>
-                        I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. 
-                        Whether you have a question or just want to say hi, feel free to reach out!
-                    </p>
-                    <div class="contact-methods">
-                        <div class="method">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
-                            <div>
-                                <strong>Email</strong>
-                                <a href="mailto:nishant098097@gmail.com">nishant098097@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="method">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                            </svg>
-                            <div>
-                                <strong>Phone</strong>
-                                <a href="tel:+917480985252">+91 7480985252</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form" id="contactForm" action="mailto:nishant098097@gmail.com" method="POST" enctype="text/plain">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" required placeholder="John Doe">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" required placeholder="john@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required placeholder="Share your thoughts..." rows="6"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary submit-btn">
-                        <span class="btn-text">Send Message</span>
-                        <span class="btn-spinner" aria-hidden="true"></span>
-                        <span class="ripple"></span>
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Nishant Kumar. Built with ❤️ using HTML, CSS, and JavaScript.</p>
-                <div class="footer-links">
-                    <a href="https://github.com/nishantdeploys" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <a href="https://linkedin.com/in/nishant-kumar-61476b283" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    <a href="mailto:nishant098097@gmail.com">Email</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JavaScript Modules -->
-    <script type="module" src="js/main.js?v=20260320_4"></script>
-    <script>
+  <!-- JavaScript Modules -->
+  <script type="module" src="js/main.js?v=20260321_3"></script>
+  <script>
     /* ═══ 3D PARTICLE FIELD ═══ */
-    (function(){
-      const canvas=document.getElementById('particle-canvas');
-      if(!canvas)return;
-      const ctx=canvas.getContext('2d');
-      let W,H;
-      const mouse={x:-9999,y:-9999};
-      function resize(){W=canvas.width=canvas.offsetWidth;H=canvas.height=canvas.offsetHeight;init();}
-      const PAL=['#ff5e5b','#7c6af7','#00d4c8','#c4b5fd','#fda4af','#38bdf8'];
-      function hex2rgb(h){return[parseInt(h.slice(1,3),16),parseInt(h.slice(3,5),16),parseInt(h.slice(5,7),16)];}
-      function mkP(){const col=PAL[Math.floor(Math.random()*PAL.length)];const rgb=hex2rgb(col);const depth=Math.random();return{x:Math.random()*W,y:Math.random()*H,z:depth,vx:(Math.random()-.5)*.22*(.4+depth*.6),vy:(Math.random()-.5)*.22*(.4+depth*.6),r:rgb,size:.6+depth*2.2,alpha:.25+depth*.55,phase:Math.random()*Math.PI*2,freq:.008+Math.random()*.012};}
-      let pts=[];
-      function init(){const n=Math.min(200,Math.max(80,Math.floor(W*H/5500)));pts=Array.from({length:n},mkP);}
-      const hero=document.getElementById('home');
-      hero.addEventListener('mousemove',e=>{const r=canvas.getBoundingClientRect();mouse.x=e.clientX-r.left;mouse.y=e.clientY-r.top;});
-      hero.addEventListener('mouseleave',()=>{mouse.x=-9999;mouse.y=-9999;});
-      let t=0;const LINK=140;const MOUSE_R=160;
-      function frame(){requestAnimationFrame(frame);t+=1;ctx.clearRect(0,0,W,H);
-        for(const p of pts){p.x+=p.vx+Math.sin(t*p.freq+p.phase)*.18;p.y+=p.vy+Math.cos(t*p.freq*1.3+p.phase)*.18;
-          const mdx=mouse.x-p.x;const mdy=mouse.y-p.y;const md=Math.sqrt(mdx*mdx+mdy*mdy);
-          if(md<MOUSE_R){const f=(1-md/MOUSE_R)*0.018*p.z;p.x+=mdx*f;p.y+=mdy*f;}
-          if(p.x<-40)p.x=W+40;if(p.x>W+40)p.x=-40;if(p.y<-40)p.y=H+40;if(p.y>H+40)p.y=-40;}
-        for(let i=0;i<pts.length-1;i++){const a=pts[i];for(let j=i+1;j<pts.length;j++){const b=pts[j];
-          const dx=a.x-b.x,dy=a.y-b.y;const d=Math.sqrt(dx*dx+dy*dy);
-          if(d<LINK){const t0=1-d/LINK;const op=t0*t0*0.22;const mr=Math.round((a.r[0]+b.r[0])/2);const mg=Math.round((a.r[1]+b.r[1])/2);const mb=Math.round((a.r[2]+b.r[2])/2);
-            ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.strokeStyle=`rgba(${mr},${mg},${mb},${op})`;ctx.lineWidth=.7+t0*.6;ctx.stroke();}}}
-        for(const p of pts){const[r,g,b]=p.r;const glowR=p.size*(2.5+p.z*4);
-          const grd=ctx.createRadialGradient(p.x,p.y,0,p.x,p.y,glowR);
-          grd.addColorStop(0,`rgba(${r},${g},${b},${p.alpha*.7})`);grd.addColorStop(.5,`rgba(${r},${g},${b},${p.alpha*.15})`);grd.addColorStop(1,`rgba(${r},${g},${b},0)`);
-          ctx.beginPath();ctx.arc(p.x,p.y,glowR,0,Math.PI*2);ctx.fillStyle=grd;ctx.fill();
-          ctx.beginPath();ctx.arc(p.x,p.y,p.size*(.35+p.z*.65),0,Math.PI*2);ctx.fillStyle=`rgba(${r},${g},${b},${p.alpha})`;ctx.fill();}
-        if(mouse.x>0){const mg=ctx.createRadialGradient(mouse.x,mouse.y,0,mouse.x,mouse.y,90);
-          mg.addColorStop(0,'rgba(124,106,247,0.08)');mg.addColorStop(.7,'rgba(124,106,247,0.02)');mg.addColorStop(1,'rgba(0,0,0,0)');
-          ctx.beginPath();ctx.arc(mouse.x,mouse.y,90,0,Math.PI*2);ctx.fillStyle=mg;ctx.fill();}}
-      resize();window.addEventListener('resize',resize);frame();
-    })();
-    /* ═══ TYPEWRITER ═══ */
-    (function(){
-      const words=['Software Engineer','Cloud Architect','React Developer','Full-Stack Builder','Problem Solver'];
-      const el=document.getElementById('tw');if(!el)return;
-      let wi=0,ci=0,del=false;
-      function tick(){const w=words[wi];
-        setTimeout(tick,del?52:88);}
-      tick();
+    (function () {
+      const canvas = document.getElementById('particle-canvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      let W, H;
+      const mouse = { x: -9999, y: -9999 };
+      function resize() { W = canvas.width = canvas.offsetWidth; H = canvas.height = canvas.offsetHeight; init(); }
+      const PAL = ['#ff5e5b', '#7c6af7', '#00d4c8', '#c4b5fd', '#fda4af', '#38bdf8'];
+      function hex2rgb(h) { return [parseInt(h.slice(1, 3), 16), parseInt(h.slice(3, 5), 16), parseInt(h.slice(5, 7), 16)]; }
+      function mkP() { const col = PAL[Math.floor(Math.random() * PAL.length)]; const rgb = hex2rgb(col); const depth = Math.random(); return { x: Math.random() * W, y: Math.random() * H, z: depth, vx: (Math.random() - .5) * .22 * (.4 + depth * .6), vy: (Math.random() - .5) * .22 * (.4 + depth * .6), r: rgb, size: .6 + depth * 2.2, alpha: .25 + depth * .55, phase: Math.random() * Math.PI * 2, freq: .008 + Math.random() * .012 }; }
+      let pts = [];
+      function init() { const n = Math.min(200, Math.max(80, Math.floor(W * H / 5500))); pts = Array.from({ length: n }, mkP); }
+      const hero = document.getElementById('home');
+      hero.addEventListener('mousemove', e => { const r = canvas.getBoundingClientRect(); mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top; });
+      hero.addEventListener('mouseleave', () => { mouse.x = -9999; mouse.y = -9999; });
+      let t = 0; const LINK = 140; const MOUSE_R = 160;
+      function frame() {
+        requestAnimationFrame(frame); t += 1; ctx.clearRect(0, 0, W, H);
+        for (const p of pts) {
+          p.x += p.vx + Math.sin(t * p.freq + p.phase) * .18; p.y += p.vy + Math.cos(t * p.freq * 1.3 + p.phase) * .18;
+          const mdx = mouse.x - p.x; const mdy = mouse.y - p.y; const md = Math.sqrt(mdx * mdx + mdy * mdy);
+          if (md < MOUSE_R) { const f = (1 - md / MOUSE_R) * 0.018 * p.z; p.x += mdx * f; p.y += mdy * f; }
+          if (p.x < -40) p.x = W + 40; if (p.x > W + 40) p.x = -40; if (p.y < -40) p.y = H + 40; if (p.y > H + 40) p.y = -40;
+        }
+        for (let i = 0; i < pts.length - 1; i++) {
+          const a = pts[i]; for (let j = i + 1; j < pts.length; j++) {
+            const b = pts[j];
+            const dx = a.x - b.x, dy = a.y - b.y; const d = Math.sqrt(dx * dx + dy * dy);
+            if (d < LINK) {
+              const t0 = 1 - d / LINK; const op = t0 * t0 * 0.22; const mr = Math.round((a.r[0] + b.r[0]) / 2); const mg = Math.round((a.r[1] + b.r[1]) / 2); const mb = Math.round((a.r[2] + b.r[2]) / 2);
+              ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.strokeStyle = `rgba(${mr},${mg},${mb},${op})`; ctx.lineWidth = .7 + t0 * .6; ctx.stroke();
+            }
+          }
+        }
+        for (const p of pts) {
+          const [r, g, b] = p.r; const glowR = p.size * (2.5 + p.z * 4);
+          const grd = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, glowR);
+          grd.addColorStop(0, `rgba(${r},${g},${b},${p.alpha * .7})`); grd.addColorStop(.5, `rgba(${r},${g},${b},${p.alpha * .15})`); grd.addColorStop(1, `rgba(${r},${g},${b},0)`);
+          ctx.beginPath(); ctx.arc(p.x, p.y, glowR, 0, Math.PI * 2); ctx.fillStyle = grd; ctx.fill();
+          ctx.beginPath(); ctx.arc(p.x, p.y, p.size * (.35 + p.z * .65), 0, Math.PI * 2); ctx.fillStyle = `rgba(${r},${g},${b},${p.alpha})`; ctx.fill();
+        }
+        if (mouse.x > 0) {
+          const mg = ctx.createRadialGradient(mouse.x, mouse.y, 0, mouse.x, mouse.y, 90);
+          mg.addColorStop(0, 'rgba(124,106,247,0.08)'); mg.addColorStop(.7, 'rgba(124,106,247,0.02)'); mg.addColorStop(1, 'rgba(0,0,0,0)');
+          ctx.beginPath(); ctx.arc(mouse.x, mouse.y, 90, 0, Math.PI * 2); ctx.fillStyle = mg; ctx.fill();
+        }
+      }
+      resize(); window.addEventListener('resize', resize); frame();
     })();
     /* ═══ 3D WIREFRAME GLOBE ═══ */
-    (function(){
+    (function () {
       const canvas = document.getElementById('globe-canvas');
-      if(!canvas) return;
+      if (!canvas) return;
       const ctx = canvas.getContext('2d');
       let w = 380, h = 380; // Fixed size per prompt
       const R = 150; // Radius
@@ -333,29 +407,29 @@
       const Longitudes = 20;
 
       // Generate nodes
-      for(let i=0; i<=Latitudes; i++){
+      for (let i = 0; i <= Latitudes; i++) {
         const phi = Math.PI * i / Latitudes;
-        for(let j=0; j<Longitudes; j++){
+        for (let j = 0; j < Longitudes; j++) {
           const theta = (Math.PI * 2 * j) / Longitudes;
           const x = R * Math.sin(phi) * Math.cos(theta);
           const y = R * Math.cos(phi);
           const z = R * Math.sin(phi) * Math.sin(theta);
-          nodes.push({x, y, z, id: i*Longitudes + j});
+          nodes.push({ x, y, z, id: i * Longitudes + j });
         }
       }
 
       // Generate links
-      for(let i=0; i<=Latitudes; i++){
-        for(let j=0; j<Longitudes; j++){
-          const cur = i*Longitudes + j;
+      for (let i = 0; i <= Latitudes; i++) {
+        for (let j = 0; j < Longitudes; j++) {
+          const cur = i * Longitudes + j;
           // Connect to right (same latitude ring)
-          if(i > 0 && i < Latitudes) {
-            const right = i*Longitudes + ((j+1)%Longitudes);
+          if (i > 0 && i < Latitudes) {
+            const right = i * Longitudes + ((j + 1) % Longitudes);
             links.push([cur, right]);
           }
           // Connect to bottom
-          if(i < Latitudes) {
-            const bottom = (i+1)*Longitudes + j;
+          if (i < Latitudes) {
+            const bottom = (i + 1) * Longitudes + j;
             links.push([cur, bottom]);
           }
         }
@@ -371,11 +445,11 @@
       const autoRotY = 0.003;
 
       function getEvents(e) { return e.touches ? e.touches[0] : e; }
-      
+
       canvas.addEventListener('mousedown', down);
-      canvas.addEventListener('touchstart', down, {passive: false});
+      canvas.addEventListener('touchstart', down, { passive: false });
       window.addEventListener('mousemove', move);
-      window.addEventListener('touchmove', move, {passive: false});
+      window.addEventListener('touchmove', move, { passive: false });
       window.addEventListener('mouseup', up);
       window.addEventListener('touchend', up);
 
@@ -386,8 +460,8 @@
         vX = 0; vY = 0;
       }
       function move(e) {
-        if(!isDragging) return;
-        if(e.cancelable) e.preventDefault();
+        if (!isDragging) return;
+        if (e.cancelable) e.preventDefault();
         const ev = getEvents(e);
         const dx = ev.clientX - pX;
         const dy = ev.clientY - pY;
@@ -399,21 +473,21 @@
 
       function frame() {
         requestAnimationFrame(frame);
-        
+
         if (isDragging) {
-           targetRotX += vX;
-           targetRotY += vY;
+          targetRotX += vX;
+          targetRotY += vY;
         } else {
-           // auto rotate
-           targetRotY += autoRotY;
-           // friction
-           vX *= 0.95;
-           vY *= 0.95;
-           targetRotX += vX;
-           targetRotY += vY;
-           
-           // gravity back to rotX = 0
-           targetRotX += (0 - targetRotX) * 0.02;
+          // auto rotate
+          targetRotY += autoRotY;
+          // friction
+          vX *= 0.95;
+          vY *= 0.95;
+          targetRotX += vX;
+          targetRotY += vY;
+
+          // gravity back to rotX = 0
+          targetRotX += (0 - targetRotX) * 0.02;
         }
 
         rotX += (targetRotX - rotX) * 0.2;
@@ -422,8 +496,8 @@
         const sinX = Math.sin(rotX), cosX = Math.cos(rotX);
         const sinY = Math.sin(rotY), cosY = Math.cos(rotY);
 
-        ctx.clearRect(0,0,w,h);
-        const cx = w/2, cy = h/2;
+        ctx.clearRect(0, 0, w, h);
+        const cx = w / 2, cy = h / 2;
 
         // Transform nodes
         const projected = nodes.map(n => {
@@ -433,7 +507,7 @@
           // rotate X
           const y2 = n.y * cosX - z1 * sinX;
           const z2 = z1 * cosX + n.y * sinX;
-          
+
           return {
             x: cx + x1,
             y: cy + y2,
@@ -442,12 +516,12 @@
         });
 
         // Draw Links
-        for(let l of links) {
+        for (let l of links) {
           const p1 = projected[l[0]];
           const p2 = projected[l[1]];
           const zAvg = (p1.z + p2.z) / 2;
-          const zNorm = (zAvg + R) / (2*R); // 0 to 1
-          
+          const zNorm = (zAvg + R) / (2 * R); // 0 to 1
+
           const alpha = 0.05 + Math.pow(zNorm, 1.5) * 0.35; // Far slightly visible, near bright
           ctx.beginPath();
           ctx.moveTo(p1.x, p1.y);
@@ -458,32 +532,33 @@
         }
 
         // Draw Dots depth sorted
-        projected.sort((a,b) => a.z - b.z);
-        for(let p of projected) {
-           const zNorm = (p.z + R) / (2*R); // 0 to 1
-           if(zNorm < 0.2) continue; // don't draw dots on the very back
-           
-           const size = 0.5 + zNorm * 2.5;
-           const alpha = 0.1 + Math.pow(zNorm, 2) * 0.9;
-           
-           ctx.beginPath();
-           ctx.arc(p.x, p.y, size, 0, Math.PI*2);
-           ctx.fillStyle = `rgba(0, 212, 200, ${alpha})`; // cyan glowing dots
-           ctx.fill();
+        projected.sort((a, b) => a.z - b.z);
+        for (let p of projected) {
+          const zNorm = (p.z + R) / (2 * R); // 0 to 1
+          if (zNorm < 0.2) continue; // don't draw dots on the very back
+
+          const size = 0.5 + zNorm * 2.5;
+          const alpha = 0.1 + Math.pow(zNorm, 2) * 0.9;
+
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, size, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(0, 212, 200, ${alpha})`; // cyan glowing dots
+          ctx.fill();
         }
-        
+
         // Front highlight glow
         const radGrd = ctx.createRadialGradient(cx - 30, cy - 30, 0, cx, cy, R);
         radGrd.addColorStop(0, 'rgba(255, 255, 255, 0.08)');
         radGrd.addColorStop(1, 'rgba(255, 255, 255, 0)');
         ctx.beginPath();
-        ctx.arc(cx, cy, R + 5, 0, Math.PI*2);
+        ctx.arc(cx, cy, R + 5, 0, Math.PI * 2);
         ctx.fillStyle = radGrd;
         ctx.fill();
 
       }
       frame();
     })();
-    </script>
+  </script>
 </body>
+
 </html>
