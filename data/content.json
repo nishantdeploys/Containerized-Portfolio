@@ -67,6 +67,7 @@
       "description": "Designed an interactive UI for booking and managing bus seats with real-time scheduling. Integrated REST APIs for booking validation and seat management, providing a seamless user experience.",
       "technologies": ["React", "C++", "REST API"],
       "categories": ["react", "fullstack"],
+      "image": "data/Bus reservation system in C++.png",
       "github": "https://github.com/nishantdeploys",
       "live": ""
     },
@@ -75,6 +76,7 @@
       "description": "Developed a chatbot-like interface to create and schedule posts across multiple platforms including Instagram, Facebook, and LinkedIn. Implemented CRUD features with an integrated date/time picker for automated posting.",
       "technologies": ["React", "Node.js", "MongoDB"],
       "categories": ["react", "fullstack"],
+      "image": "data/Hair care chatbot interface design.png",
       "github": "https://github.com/nishantdeploys",
       "live": ""
     },
@@ -83,6 +85,34 @@
       "description": "Built a secure file handling system using AWS services within the AWS Academy sandbox. Automated file event processing using S3 triggers and Lambda functions for real-time logging and monitoring.",
       "technologies": ["AWS EC2", "AWS S3", "AWS Lambda", "Python"],
       "categories": ["aws", "fullstack"],
+      "image": "data/Secure file upload system architecture.png",
+      "github": "https://github.com/nishantdeploys",
+      "live": ""
+    },
+    {
+      "title": "Cloud-Native Ticketing System",
+      "description": "Scalable event ticketing platform leveraging AWS Fargate and Docker containers. Implemented high-availability architecture with RDS and ElastiCache for lightning-fast performance.",
+      "technologies": ["AWS", "Docker", "Node.js"],
+      "categories": ["aws", "fullstack"],
+      "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format&fit=crop",
+      "github": "https://github.com/nishantdeploys",
+      "live": ""
+    },
+    {
+      "title": "AI Image Generator",
+      "description": "Creative tool using OpenAI's DALL-E API to generate unique artwork from text prompts. Features a community gallery, user authentication, and high-resolution image downloads.",
+      "technologies": ["React", "OpenAI", "Express"],
+      "categories": ["react", "fullstack"],
+      "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=800&auto=format&fit=crop",
+      "github": "https://github.com/nishantdeploys",
+      "live": ""
+    },
+    {
+      "title": "Portfolio Website v1",
+      "description": "A clean, responsive portfolio showcasing initial work. Built with modern web standards, featuring sections for projects, skills, and a functional contact form.",
+      "technologies": ["HTML5", "CSS3", "JavaScript"],
+      "categories": ["fullstack"],
+      "image": "data/Nishant Kumar - Software & Cloud Engineer.png",
       "github": "https://github.com/nishantdeploys",
       "live": ""
     }
