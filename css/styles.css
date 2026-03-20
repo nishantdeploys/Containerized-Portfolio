@@ -39,18 +39,40 @@ body {
 }
 
 /* ===== TYPOGRAPHY ===== */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: var(--fw-bold);
     line-height: var(--lh-tight);
     color: var(--text-primary);
 }
 
-h1 { font-size: var(--fs-5xl); }
-h2 { font-size: var(--fs-4xl); }
-h3 { font-size: var(--fs-3xl); }
-h4 { font-size: var(--fs-2xl); }
-h5 { font-size: var(--fs-xl); }
-h6 { font-size: var(--fs-lg); }
+h1 {
+    font-size: var(--fs-5xl);
+}
+
+h2 {
+    font-size: var(--fs-4xl);
+}
+
+h3 {
+    font-size: var(--fs-3xl);
+}
+
+h4 {
+    font-size: var(--fs-2xl);
+}
+
+h5 {
+    font-size: var(--fs-xl);
+}
+
+h6 {
+    font-size: var(--fs-lg);
+}
 
 p {
     margin-bottom: var(--space-md);
@@ -170,14 +192,16 @@ a:hover {
 }
 
 .nav-actions {
-    display: none; /* hidden on desktop to fix centering */
+    display: none;
+    /* hidden on desktop to fix centering */
     align-items: center;
     gap: var(--space-md);
 }
 
 @media (max-width: 768px) {
     .nav-actions {
-        display: flex; /* show on mobile for hamburger */
+        display: flex;
+        /* show on mobile for hamburger */
     }
 }
 
@@ -451,15 +475,17 @@ a:hover {
 .skill-bubble {
     position: absolute;
     bottom: -100px;
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--glass-bg);
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    pointer-events: none; /* Let clicks pass through to container */
+    z-index: 1; /* Keep it below other content but visible */
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     animation: floatUpAndFade linear infinite;
     transition: transform var(--transition-fast), background var(--transition-fast);
 }
@@ -520,6 +546,7 @@ a:hover {
     border-radius: var(--radius-xl);
     transition: all var(--transition-base);
     cursor: pointer;
+    overflow: hidden;
 }
 
 .project-card:hover {
@@ -604,6 +631,7 @@ a:hover {
     border: 1px solid var(--glass-border);
     border-radius: var(--radius-xl);
     transition: all var(--transition-base);
+    overflow: hidden;
 }
 
 .timeline-item::before {
@@ -663,6 +691,7 @@ a:hover {
     border-radius: var(--radius-xl);
     text-align: center;
     transition: all var(--transition-base);
+    overflow: hidden;
 }
 
 .achievement-card:hover {
@@ -956,6 +985,7 @@ a:hover {
 #globe-canvas {
     cursor: grab;
 }
+
 #globe-canvas:active {
     cursor: grabbing;
 }
@@ -965,6 +995,7 @@ a:hover {
         grid-template-columns: 1fr;
         padding-top: 6rem;
     }
+
     .hero-profile-image {
         margin: 0 auto;
     }
@@ -996,8 +1027,15 @@ a:hover {
 }
 
 @keyframes blinkPulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: .25; }
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .25;
+    }
 }
 
 .hero-name-new {
@@ -1172,18 +1210,37 @@ a:hover {
 }
 
 @keyframes scrollDot {
-    0% { top: 5px; opacity: 1; }
-    100% { top: 24px; opacity: 0; }
+    0% {
+        top: 5px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 24px;
+        opacity: 0;
+    }
 }
 
 @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(22px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(22px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* Hero responsive */
@@ -1257,6 +1314,7 @@ a:hover {
     gap: 1.6rem;
     position: sticky;
     top: 110px;
+    overflow: hidden;
 }
 
 .avatar-ring {
@@ -1285,7 +1343,9 @@ a:hover {
 }
 
 @keyframes spin {
-    to { transform: rotate(360deg); }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .avatar-img {
@@ -1348,11 +1408,11 @@ a:hover {
 .chip {
     padding: .32rem .85rem;
     border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--glass-bg);
     font-size: .7rem;
     letter-spacing: .04em;
-    color: rgba(0, 0, 0, 0.85);
+    color: rgba(240, 238, 248, 0.85);
     transition: all .2s;
     cursor: default;
 }
@@ -1440,11 +1500,12 @@ a:hover {
 
 .stat {
     padding: 1.3rem 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 14px;
-    background: rgba(255, 255, 255, 0.9);
+    background: var(--glass-bg);
     text-align: center;
     transition: transform .25s, border-color .25s;
+    overflow: hidden;
 }
 
 .stat:hover {
@@ -1485,8 +1546,8 @@ a:hover {
     gap: .5rem;
     padding: .62rem 1.15rem;
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--glass-bg);
     color: rgba(240, 238, 248, 0.85);
     font-size: .83rem;
     text-decoration: none;
@@ -1520,6 +1581,7 @@ a:hover {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
+
     .profile-card {
         position: static;
     }
