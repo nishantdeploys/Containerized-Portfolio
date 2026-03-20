@@ -2,13 +2,16 @@
  * Main JS - Initialize all modules
  */
 
-import ThemeManager from './theme.js';
-import NavigationManager from './navigation.js';
-import AnimationManager from './animations.js';
-import SkillBars from './components/skillBars.js';
-import ProjectCards from './components/projectCards.js';
-import Typewriter from './components/typewriter.js';
-import MeteorShower from './meteorShower.js';
+const ASSET_VERSION = '20260320_6';
+const CONTENT_URL = `data/content.json?v=${ASSET_VERSION}`;
+
+import ThemeManager from './theme.js?v=20260320_6';
+import NavigationManager from './navigation.js?v=20260320_6';
+import AnimationManager from './animations.js?v=20260320_6';
+import SkillBars from './components/skillBars.js?v=20260320_6';
+import ProjectCards from './components/projectCards.js?v=20260320_6';
+import Typewriter from './components/typewriter.js?v=20260320_6';
+import MeteorShower from './meteorShower.js?v=20260320_6';
 
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', () => {
@@ -90,7 +93,7 @@ function initProfileUploader() {
  */
 async function loadTimeline(containerId, dataKey) {
     try {
-        const response = await fetch('data/content.json');
+        const response = await fetch(CONTENT_URL, { cache: 'no-store' });
         const data = await response.json();
         const items = data[dataKey];
         const container = document.getElementById(containerId);
@@ -115,7 +118,7 @@ async function loadTimeline(containerId, dataKey) {
  */
 async function loadAchievements() {
     try {
-        const response = await fetch('data/content.json');
+        const response = await fetch(CONTENT_URL, { cache: 'no-store' });
         const data = await response.json();
         const achievements = data.achievements;
         const container = document.getElementById('achievementsGrid');

@@ -2,6 +2,8 @@
  * Skill Bars Component - Animated progress bars
  */
 
+const CONTENT_URL = 'data/content.json?v=20260320_1';
+
 class SkillBars {
     constructor(containerId) {
         this.container = document.getElementById(containerId);
@@ -13,7 +15,7 @@ class SkillBars {
      */
     async loadSkills() {
         try {
-            const response = await fetch('data/content.json');
+            const response = await fetch(CONTENT_URL, { cache: 'no-store' });
             const data = await response.json();
             this.skills = data.skills;
             this.render();

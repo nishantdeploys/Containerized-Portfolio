@@ -2,6 +2,8 @@
  * Project Cards Component - Filterable project gallery
  */
 
+const CONTENT_URL = 'data/content.json?v=20260320_1';
+
 class ProjectCards {
     constructor(containerId, filtersId) {
         this.container = document.getElementById(containerId);
@@ -15,7 +17,7 @@ class ProjectCards {
      */
     async loadProjects() {
         try {
-            const response = await fetch('data/content.json');
+            const response = await fetch(CONTENT_URL, { cache: 'no-store' });
             const data = await response.json();
             this.projects = data.projects;
             this.render();
