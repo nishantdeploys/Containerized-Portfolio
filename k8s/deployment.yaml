@@ -5,7 +5,7 @@ metadata:
   labels:
     app: portfolio
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: portfolio
@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
         - name: portfolio
-          image: portfolio:latest
-          imagePullPolicy: IfNotPresent
+          image: nishantdeploys/portfolio:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
           resources:
